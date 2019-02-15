@@ -201,8 +201,8 @@ if (empty($_SESSION['pharmacie_id']) && empty($_SESSION['pharmacie_name']))
                         <p class="write-score text-center">
                           <?php
                             if (isset($_SESSION['form_result']))
-                              echo $_SESSION['form_result'] . '%';
-                           ?>
+                             echo $_SESSION['form_result'] . '%';
+                           ?> 
                         </p>
                         <div class="text-center">
                             <button type="button" class="btn btn-success">Imprimer en PDF</button>

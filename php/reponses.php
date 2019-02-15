@@ -55,6 +55,7 @@ if (isset($_POST['radioSexe']) && ($_POST['radioSexe'] == 'femme' || $_POST['rad
     false);
 
     $_SESSION['form_result'] = $result;
+    $_SESSION['age'] = $age;
 
     header('Location: ../resultats.php');
   }
