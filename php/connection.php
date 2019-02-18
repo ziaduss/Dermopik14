@@ -28,7 +28,7 @@ if (isset($_POST['mail']) && !empty($_POST['mail'])
   		{
   				$_SESSION['save_email'] = null;
   				$_SESSION['pharmacie_id'] = $data->id;
-  				$_SESSION['pharmacie_name'] = $data->nom;
+				$_SESSION['pharmacie_name'] = $data->nom;
 
   				// Si l'utilisateur a coché la case "Se souvenir de moi"
   				if (isset($_POST['remember']))

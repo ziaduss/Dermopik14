@@ -193,8 +193,8 @@ if (empty($_SESSION['pharmacie_id']) && empty($_SESSION['pharmacie_name']))
         <div class="container">
         	<div class="row">
         		<section>
-              <form action="php/sendmail.php" method="POST">
 
+            
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Votre score</h3>
@@ -204,10 +204,13 @@ if (empty($_SESSION['pharmacie_id']) && empty($_SESSION['pharmacie_name']))
                              echo $_SESSION['form_result'] . '%';
                            ?> 
                         </p>
+                        
+                        <form action="pdfgen.php" method="POST">
                         <div class="text-center">
-                            <button type="button" class="btn btn-success">Imprimer en PDF</button>
+                            <button type="submit" class="btn btn-success">Imprimer en PDF</button>
                         </div>
-                    </div>
+                        </form>
+                    </div><form action="php/sendmail.php" method="POST">
                     <div class="col-sm-6">
                         <div class="form-group row">
                           <label for="email" class="col-2 col-form-label">Votre mail</label>
@@ -215,6 +218,7 @@ if (empty($_SESSION['pharmacie_id']) && empty($_SESSION['pharmacie_name']))
                             <input class="form-control" type="email" for="email" name="email">
                           </div>
                         </div>
+             
                         <div class="text-center">
                             <button type="submit" class="btn btn-success">Envoyer résultat par mail</button>
                         </div>

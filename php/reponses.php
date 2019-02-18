@@ -56,6 +56,11 @@ if (isset($_POST['radioSexe']) && ($_POST['radioSexe'] == 'femme' || $_POST['rad
 
     $_SESSION['form_result'] = $result;
     $_SESSION['age'] = $age;
+    $_SESSION['repQ1'] = $repQ1;
+    $_SESSION['repQ2'] = $repQ2;
+    $_SESSION['repQ3'] = $repQ3;
+    $_SESSION['repQ4'] = $repQ4;
+    $_SESSION['repQ5'] = $repQ5;
 
     header('Location: ../resultats.php');
   }
